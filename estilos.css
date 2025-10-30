@@ -16,7 +16,9 @@ h1{
 	font-size: 55px;
 }
 
-.grid{
+.grid,
+.grid-pixeles
+{
 	width: 90%;
 	max-width: 1000px;
 	border: 10px solid #393e4d;
@@ -26,7 +28,9 @@ h1{
 	text-align: center;
 }
 
-.grid div{
+.grid div,
+.grid-pixeles
+{
 	display: block;
 	padding: 20px;
 	color: #fff;
