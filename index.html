@@ -25,7 +25,67 @@
             grid-template-rows: 200px 100px 300px;
         }
 
+        .grid-repeat{
+            display: grid;
+
+            grid-template-columns: repeat(6, 2fr);
+
+            grid-template-rows: repeat(3, 2fr);
+
+            grid-gap: 20px;
+        }
         
+        .grid-area{
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(4, auto);
+
+            grid-template-areas: 
+            "header    header       header"
+            "sidebar1        contenido        sidebar2"
+            "sidebar1         widget          sidebar2 "
+            "footer            footer           footer";
+        }
+
+        .grid-area .header{
+            background: orange;
+            grid-column-start: header;
+            grid-column-end: header;
+        }
+
+        .grid-area .sidebar1{
+            background: lightseagreen;
+            grid-column: sidebar1;
+            grid-row: sidebar1;
+        }
+
+        .grid-area .contenido{
+            background: white;
+            color: black;
+           grid-area: contenido;
+        }
+
+        .grid-area .sidebar2 {
+            background: plum;
+            grid-area: sidebar2;
+        }
+
+        .grid-area .widget{
+            background: brown;
+            grid-area: widget;
+        }
+
+        .grid-area .contenido{
+            background: coral;
+            grid-area: contenido;
+        }
+
+        .grid-area .footer{
+            background: skyblue;
+            grid-area: footer;
+        }
+
 
     </style>
 </head>
@@ -34,10 +94,19 @@
     <header>
         <h1>Fundamentos de GRID (CSS3)</h1>
     </header>
+    <h2>GRID con AREA</h2>
+ <div class="grid-area">
+        <div class="header">1</div>
+        <div class="sidebar1">2</div>
+        <div class="contenido">3</div>
+        <div class="widget">4</div>
+        <div class="sidebar2">5</div> 
+        <div class="footer">6</div>
+        </div>
 
     <h2>GRID con FRACCIONES</h2>
     <div class="grid">
-
+       
         <div>1</div>
         <div>2</div>
         <div>3</div>
@@ -57,8 +126,34 @@
 
     </div>
     
+    <br>
+
     <h2>Fundamentos de GRID con PIXELES (CSS3)</h2>
     <div class="grid-pixeles">
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        <div>16</div>
+
+    </div>
+
+    <br>
+
+    <h2>GRID con REPEAT</h2>
+    <div class="grid-repeat">
 
         <div>1</div>
         <div>2</div>

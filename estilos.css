@@ -17,7 +17,10 @@ h1{
 }
 
 .grid,
-.grid-pixeles
+.grid-pixeles,
+.grid-area,
+.grid-repeat
+
 {
 	width: 90%;
 	max-width: 1000px;
@@ -29,7 +32,9 @@ h1{
 }
 
 .grid div,
-.grid-pixeles
+.grid-pixeles div,
+.grid-area div,
+.grid-repeat div
 {
 	display: block;
 	padding: 20px;
